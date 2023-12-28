@@ -64,9 +64,14 @@ public class MemberService {
         if (result != null) {
             CommonVariables.loginMobile = loginMobile;
             System.out.println("로그인 성공");
-        }else {
+        } else {
             System.out.println("로그인 실패");
         }
+    }
+
+    public void logout() {
+        CommonVariables.loginMobile = null;
+        System.out.println("로그아웃 완료");
     }
 }
 

@@ -22,7 +22,7 @@ public class MainController {
             } else if (select == 2) {
                 memberService.login();
             } else if (select == 3) {
-
+                memberService.logout();
             } else if (select == 0) {
                 System.out.println("프로그램을 종료합니다.");
                 run = false;
