@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="로그인 완료.">
+    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="로그아웃 완료.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/CommonVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CommonVariables.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MemberService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,13 +91,22 @@
       <option name="project" value="LOCAL" />
       <updated>1703727757859</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="로그아웃 완료.">
+      <option name="closed" value="true" />
+      <created>1703728377409</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703728377409</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="MainController, DTO 세개 작성 완." />
     <MESSAGE value="정보등록 절반 완성." />
     <MESSAGE value="로그인 완료." />
-    <option name="LAST_COMMIT_MESSAGE" value="로그인 완료." />
+    <MESSAGE value="로그아웃 완료." />
+    <option name="LAST_COMMIT_MESSAGE" value="로그아웃 완료." />
   </component>
 </project>

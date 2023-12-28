@@ -55,6 +55,8 @@ public class MemberService {
         System.out.println("로그인 메뉴");
         System.out.println("전화번호를 입력하세요.");
         String loginMobile = scn.next();
+//        System.out.println("회원 유형을 입력하세요.");
+//        String loginCategory = scn.next();
         System.out.println("비밀번호를 입력하세요.");
         String loginPw = scn.next();
 
@@ -63,6 +65,7 @@ public class MemberService {
         MemberDTO result = memberRepository.login(loginMobile, loginPw);
         if (result != null) {
             CommonVariables.loginMobile = loginMobile;
+            CommonVariables.loginedCategory = result.getMemberCategory();
             System.out.println("로그인 성공");
         } else {
             System.out.println("로그인 실패");
