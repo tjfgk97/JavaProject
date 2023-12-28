@@ -20,7 +20,7 @@ public class MainController {
             if (select == 1) {
                 memberService.save();
             } else if (select == 2) {
-
+                memberService.login();
             } else if (select == 3) {
 
             } else if (select == 0) {

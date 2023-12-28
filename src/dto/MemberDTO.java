@@ -5,9 +5,8 @@ public class MemberDTO {
     private String memberName;
     private String memberMobile;
     private String memberPassword;
-    private int memberCategory;
+    private String memberCategory;
     private int memberAge;
-//    private String memberEmail;
     private String checkVaccination; // 접종 여부 확인하는 필드값
 
 
@@ -28,13 +27,14 @@ public class MemberDTO {
         this.memberName = memberName;
     }
 
-    public int getMemberAge() {
-        return memberAge;
+    public String getMemberMobile() {
+        return memberMobile;
     }
 
-    public void setMemberAge(int memberAge) {
-        this.memberAge = memberAge;
+    public void setMemberMobile(String memberMobile) {
+        this.memberMobile = memberMobile;
     }
+
     public String getMemberPassword() {
         return memberPassword;
     }
@@ -43,27 +43,20 @@ public class MemberDTO {
         this.memberPassword = memberPassword;
     }
 
-    public int getMemberCategory() {
+    public String getMemberCategory() {
         return memberCategory;
     }
 
-    public void setMemberCategory(int memberCategory) {
+    public void setMemberCategory(String memberCategory) {
         this.memberCategory = memberCategory;
     }
-    //    public String getMemberEmail() {
-//        return memberEmail;
-//    }
 
-//    public void setMemberEmail(String memberEmail) {
-//        this.memberEmail = memberEmail;
-//    }
-
-    public String getMemberMobile() {
-        return memberMobile;
+    public int getMemberAge() {
+        return memberAge;
     }
 
-    public void setMemberMobile(String memberMobile) {
-        this.memberMobile = memberMobile;
+    public void setMemberAge(int memberAge) {
+        this.memberAge = memberAge;
     }
 
     public String getCheckVaccination() {
@@ -76,7 +69,7 @@ public class MemberDTO {
 
     private static Long idValue = 1L;
 
-    public MemberDTO(String memberName, String memberMobile, String memberPassword, int memberCategory, int memberAge, String checkVaccination) {
+    public MemberDTO(String memberName, String memberMobile, String memberPassword, String memberCategory, int memberAge, String checkVaccination) {
         this.id = idValue++;
         this.memberName = memberName;
         this.memberMobile = memberMobile;
@@ -86,6 +79,11 @@ public class MemberDTO {
         this.checkVaccination = checkVaccination;
     }
 
+    public MemberDTO(String memberMobile, String memberPassword) {
+        this.memberMobile = memberMobile;
+        this.memberPassword = memberPassword;
+    }
+
     @Override
     public String toString() {
         return "MemberDTO{" +
@@ -93,7 +91,7 @@ public class MemberDTO {
                 ", memberName='" + memberName + '\'' +
                 ", memberMobile='" + memberMobile + '\'' +
                 ", memberPassword='" + memberPassword + '\'' +
-                ", memberCategory=" + memberCategory +
+                ", memberCategory='" + memberCategory + '\'' +
                 ", memberAge=" + memberAge +
                 ", checkVaccination='" + checkVaccination + '\'' +
                 '}';

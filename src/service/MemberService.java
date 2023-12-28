@@ -1,5 +1,6 @@
 package service;
 
+import common.CommonVariables;
 import dto.MemberDTO;
 import repository.MemberRepository;
 
@@ -15,7 +16,7 @@ public class MemberService {
 
 
         do { //전화번호 중복 체크
-            System.out.println("정보 등록");
+            System.out.println("정보 등록 메뉴");
             System.out.println("전화번호를 입력하세요.");
             loginMobile = scn.next();
             memberDTO = memberRepository.checkedMobile(loginMobile);
@@ -31,23 +32,41 @@ public class MemberService {
         System.out.println("이름을 입력하세요.");
         String joinName = scn.next();
         System.out.println("비밀번호를 입력하세요.");
-        String joinPw = scn.nextLine();
-        System.out.println("회원 유형을 입력하세요. \nex)1.개인 회원, 2.기업(병원) 회원");
-        int joinCategory = scn.nextInt();
+        String joinPw = scn.next();
+        System.out.println("회원 유형을 입력하세요. ex)1.개인, 2.병원");
+        String joinCategory = scn.next();
 //        if (joinCategory == 1) {
-            System.out.println("나이를 입력하세요.");
-            joinAge = scn.nextInt();
-            System.out.println("접종 여부를 입력하세요. ex)완료, 미완");
-            vaccinate = scn.next();
+        System.out.println("나이를 입력하세요.");
+        joinAge = scn.nextInt();
+        System.out.println("접종 여부를 입력하세요. ex)완료, 미완");
+        vaccinate = scn.next();
 //        } else if (joinCategory == 2) {
 
-            MemberDTO joinMember = new MemberDTO(loginMobile, joinName, joinPw, joinAge, joinCategory, vaccinate);
-            boolean result = memberRepository.save(joinMember);
-            if (result) {
-                System.out.println("정보 등록 성공");
-            } else {
-                System.out.println("정보 등록 실패");
-            }
+        MemberDTO joinMember = new MemberDTO(loginMobile, joinName, joinPw, joinCategory, joinAge, vaccinate);
+        boolean result = memberRepository.save(joinMember);
+        if (result) {
+            System.out.println("정보 등록 성공");
+        } else {
+            System.out.println("정보 등록 실패");
         }
     }
+
+    public void login() {
+        System.out.println("로그인 메뉴");
+        System.out.println("전화번호를 입력하세요.");
+        String loginMobile = scn.next();
+        System.out.println("비밀번호를 입력하세요.");
+        String loginPw = scn.next();
+
+        MemberDTO login = new MemberDTO(loginMobile, loginPw);
+
+        MemberDTO result = memberRepository.login(loginMobile, loginPw);
+        if (result != null) {
+            CommonVariables.loginMobile = loginMobile;
+            System.out.println("로그인 성공");
+        }else {
+            System.out.println("로그인 실패");
+        }
+    }
+}
 
