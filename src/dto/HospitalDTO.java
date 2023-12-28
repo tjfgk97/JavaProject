@@ -4,6 +4,8 @@ public class HospitalDTO {
     private String vaccineName;
     private String vaccineCount;
 
+
+
     public String getVaccineName() {
         return vaccineName;
     }
@@ -23,6 +25,10 @@ public class HospitalDTO {
     public HospitalDTO(String vaccineName, String vaccineCount) {
         this.vaccineName = vaccineName;
         this.vaccineCount = vaccineCount;
+    }
+
+    public HospitalDTO(String vaccineName) {
+        this.vaccineName = vaccineName;
     }
 
     @Override

@@ -10,7 +10,7 @@ public class MainController {
         Scanner scn = new Scanner(System.in);
         MemberService memberService = new MemberService();
         ResvService resvService = new ResvService();
-//        HospitalService hospitalService = new HospitalService();
+        HospitalService hospitalService = new HospitalService();
 
         boolean run = true;
         int select = 0;
@@ -66,19 +66,17 @@ public class MainController {
                 boolean hospitalRun = true;
                 while (hospitalRun) {
                     if (CommonVariables.loginedCategory.equals("병원")) {
-                        System.out.println("====== 예약 게시판 ======");
-                        System.out.println("--------------------------------------------------------------------------");
-                        System.out.println("1.보유 백신 등록 | 2.백신 종류별 재고량 등록 | 3.백신 종류 및 재고 수정 | 0.이전 메뉴");
-                        System.out.println("--------------------------------------------------------------------------");
+                        System.out.println("====== 병원 전용 게시판 ======");
+                        System.out.println("------------------------------------------------------------");
+                        System.out.println("1.보유 백신 및 재고량 등록 | 2.백신 종류 및 재고 수정 | 0.이전 메뉴");
+                        System.out.println("------------------------------------------------------------");
                         System.out.print("선택> ");
                         select = scn.nextInt();
 
                         if (select == 1) {
-
+                            hospitalService.insertVaccine();
                         } else if (select == 2) {
-
-                        } else if (select == 3) {
-
+                            hospitalService.updateVaccine();
                         } else if (select == 0) {
                             System.out.println("이전 메뉴로 돌아갑니다.");
                             hospitalRun = false;
