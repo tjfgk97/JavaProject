@@ -10,7 +10,7 @@ public class MainController {
         Scanner scn = new Scanner(System.in);
         MemberService memberService = new MemberService();
         ResvService resvService = new ResvService();
-        HospitalService hospitalService = new HospitalService();
+//        HospitalService hospitalService = new HospitalService();
 
         boolean run = true;
         int select = 0;
