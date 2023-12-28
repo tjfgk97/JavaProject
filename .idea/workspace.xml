@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="findByHospital 미완">
+    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="병원 전용 게시판 완료.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/HospitalDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/HospitalDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/HospitalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/HospitalRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/HospitalService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703745283189</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="병원 전용 게시판 완료.">
+      <option name="closed" value="true" />
+      <created>1703748787462</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703748787462</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +165,7 @@
     <MESSAGE value="로그아웃 완료." />
     <MESSAGE value="MainController 최종 완." />
     <MESSAGE value="findByHospital 미완" />
-    <option name="LAST_COMMIT_MESSAGE" value="findByHospital 미완" />
+    <MESSAGE value="병원 전용 게시판 완료." />
+    <option name="LAST_COMMIT_MESSAGE" value="병원 전용 게시판 완료." />
   </component>
 </project>
