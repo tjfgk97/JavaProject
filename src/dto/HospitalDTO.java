@@ -1,58 +1,35 @@
 package dto;
 
 public class HospitalDTO {
-    private Long id;
-//    private String hospitalPassword;
-    private String hospitalName;
-    private String hospitalEmail;
-    private String hospitalMobile;
+    private String vaccineName;
+    private String vaccineCount;
 
-    public Long getId() {
-        return id;
+    public String getVaccineName() {
+        return vaccineName;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setVaccineName(String vaccineName) {
+        this.vaccineName = vaccineName;
     }
 
-//    public String getHospitalPassword() {
-//        return hospitalPassword;
-//    }
-//
-//    public void setHospitalPassword(String hospitalPassword) {
-//        this.hospitalPassword = hospitalPassword;
-//    }
-
-    public String getHospitalName() {
-        return hospitalName;
+    public String getVaccineCount() {
+        return vaccineCount;
     }
 
-    public void setHospitalName(String hospitalName) {
-        this.hospitalName = hospitalName;
+    public void setVaccineCount(String vaccineCount) {
+        this.vaccineCount = vaccineCount;
     }
 
-    public String getHospitalEmail() {
-        return hospitalEmail;
+    public HospitalDTO(String vaccineName, String vaccineCount) {
+        this.vaccineName = vaccineName;
+        this.vaccineCount = vaccineCount;
     }
 
-    public void setHospitalEmail(String hospitalEmail) {
-        this.hospitalEmail = hospitalEmail;
-    }
-
-    public String getHospitalMobile() {
-        return hospitalMobile;
-    }
-
-    public void setHospitalMobile(String hospitalMobile) {
-        this.hospitalMobile = hospitalMobile;
-    }
-
-    private static Long idValue = 1L;
-    public HospitalDTO(String hospitalPassword, String hospitalName, String hospitalEmail, String hospitalMobile) {
-        this.id = idValue++;
-//        this.hospitalPassword = hospitalPassword;
-        this.hospitalName = hospitalName;
-        this.hospitalEmail = hospitalEmail;
-        this.hospitalMobile = hospitalMobile;
+    @Override
+    public String toString() {
+        return "HospitalDTO{" +
+                "vaccineName='" + vaccineName + '\'' +
+                ", vaccineCount='" + vaccineCount + '\'' +
+                '}';
     }
 }

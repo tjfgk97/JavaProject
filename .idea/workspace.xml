@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="로그아웃 완료.">
+    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="MainController 최종 완.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/CommonVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CommonVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/HospitalDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/HospitalDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/ResvRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ResvRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/ResvService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ResvService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703728377409</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="MainController 최종 완.">
+      <option name="closed" value="true" />
+      <created>1703730027389</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703730027389</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -107,6 +117,7 @@
     <MESSAGE value="정보등록 절반 완성." />
     <MESSAGE value="로그인 완료." />
     <MESSAGE value="로그아웃 완료." />
-    <option name="LAST_COMMIT_MESSAGE" value="로그아웃 완료." />
+    <MESSAGE value="MainController 최종 완." />
+    <option name="LAST_COMMIT_MESSAGE" value="MainController 최종 완." />
   </component>
 </project>

@@ -1,5 +1,7 @@
 import common.CommonVariables;
+import service.HospitalService;
 import service.MemberService;
+import service.ResvService;
 
 import java.util.Scanner;
 
@@ -7,6 +9,9 @@ public class MainController {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         MemberService memberService = new MemberService();
+        ResvService resvService = new ResvService();
+        HospitalService hospitalService = new HospitalService();
+
         boolean run = true;
         int select = 0;
 
@@ -34,7 +39,8 @@ public class MainController {
                         select = scn.nextInt();
 
                         if (select == 1) {
-
+                            resvService.findByHospital();
+                            // 미완성
                         } else if (select == 2) {
 
                         } else if (select == 3) {
