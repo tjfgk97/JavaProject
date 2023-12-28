@@ -1,5 +1,5 @@
 package common;
 
 public class CommonVariables {
-    public static String checkedVaccine = null;
+    public static String loginMobile = null;
 }

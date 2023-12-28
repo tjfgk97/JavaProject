@@ -2,7 +2,7 @@ package dto;
 
 public class HospitalDTO {
     private Long id;
-    private String hospitalPassword;
+//    private String hospitalPassword;
     private String hospitalName;
     private String hospitalEmail;
     private String hospitalMobile;
@@ -15,13 +15,13 @@ public class HospitalDTO {
         this.id = id;
     }
 
-    public String getHospitalPassword() {
-        return hospitalPassword;
-    }
-
-    public void setHospitalPassword(String hospitalPassword) {
-        this.hospitalPassword = hospitalPassword;
-    }
+//    public String getHospitalPassword() {
+//        return hospitalPassword;
+//    }
+//
+//    public void setHospitalPassword(String hospitalPassword) {
+//        this.hospitalPassword = hospitalPassword;
+//    }
 
     public String getHospitalName() {
         return hospitalName;
@@ -50,7 +50,7 @@ public class HospitalDTO {
     private static Long idValue = 1L;
     public HospitalDTO(String hospitalPassword, String hospitalName, String hospitalEmail, String hospitalMobile) {
         this.id = idValue++;
-        this.hospitalPassword = hospitalPassword;
+//        this.hospitalPassword = hospitalPassword;
         this.hospitalName = hospitalName;
         this.hospitalEmail = hospitalEmail;
         this.hospitalMobile = hospitalMobile;

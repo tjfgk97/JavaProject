@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/common/CommonVariables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/HospitalDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/MemberDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dto/ResvDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/HospitalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/MemberRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/ResvRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/HospitalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/MemberService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/service/ResvService.java" afterDir="false" />
+    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="MainController, DTO 세개 작성 완.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/common/CommonVariables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/CommonVariables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/HospitalDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/HospitalDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/MemberDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/MemberService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +28,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2a71tp1sUVW3aqMaTntqyu2fRIC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,15 +38,29 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="MainController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainController" />
+      <module name="JavaProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainController" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,6 +70,19 @@
       <option name="presentableId" value="Default" />
       <updated>1703655023746</updated>
     </task>
+    <task id="LOCAL-00001" summary="MainController, DTO 세개 작성 완.">
+      <option name="closed" value="true" />
+      <created>1703662920003</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703662920003</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="MainController, DTO 세개 작성 완." />
+    <option name="LAST_COMMIT_MESSAGE" value="MainController, DTO 세개 작성 완." />
   </component>
 </project>
