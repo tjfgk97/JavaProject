@@ -48,7 +48,7 @@ public class MainController {
                         } else if (select == 4) {
                             resvService.resvChange();
                         } else if (select == 5) {
-
+                            resvService.resvCancel();
                         } else if (select == 6) {
 
                         } else if (select == 7) {

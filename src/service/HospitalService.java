@@ -36,11 +36,13 @@ public class HospitalService {
             int updateVaccineCount = scn.nextInt();
             boolean result = hospitalRepository.updateVaccine(updateVaccine, updateVaccineCount);
             if (result) {
-            System.out.println(hospitalDTO);
+                System.out.println(hospitalDTO);
                 System.out.println("수정 완료");
             } else {
                 System.out.println("수정 실패");
             }
+        } else {
+            System.out.println("해당 백신은 보유하고있지 않습니다.");
         }
     }
 }

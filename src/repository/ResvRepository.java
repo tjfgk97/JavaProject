@@ -22,8 +22,8 @@ public class ResvRepository {
 //        }
         for (MemberDTO memberDTO : memberDTOList) {
             if (memberDTO.getMemberName().contains(hospitalName)) {
-                if(memberDTO.getMemberCategory().equals("병원")) {
-                memberDTOS.add(memberDTO);
+                if (memberDTO.getMemberCategory().equals("병원")) {
+                    memberDTOS.add(memberDTO);
                 }
             }
         }
@@ -37,5 +37,24 @@ public class ResvRepository {
 
     public List<ResvDTO> resvHistoryList() {
         return resvDTOList;
+    }
+
+    public ResvDTO findByName(String updateName) {
+        for (int i = 0; i < resvDTOList.size(); i++) {
+            if (updateName.equals(resvDTOList.get(i).getResvName())) {
+                return resvDTOList.get(i);
+            }
+        }
+        return null;
+    }
+
+    public boolean resvChange(String updateName, String updateDate) {
+        for (int i = 0; i < resvDTOList.size(); i++) {
+            if (updateName.equals(resvDTOList.get(i).getResvName())){
+                resvDTOList.get(i).setResvDate(updateDate);
+                return true;
+            }
+        }
+        return false;
     }
 }

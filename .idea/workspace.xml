@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="일단 커밋">
+    <list default="true" id="c60b69c8-7802-4412-8009-65a67b72f1d5" name="Changes" comment="병원 전용 게시판 완료.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/HospitalDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/HospitalDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dto/ResvDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dto/ResvDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/HospitalRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/HospitalRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repository/ResvRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ResvRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/HospitalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/HospitalService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service/ResvService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/ResvService.java" afterDir="false" />
@@ -146,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703749701662</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="병원 전용 게시판 완료.">
+      <option name="closed" value="true" />
+      <created>1703814225686</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703814225686</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,8 +185,8 @@
     <MESSAGE value="로그아웃 완료." />
     <MESSAGE value="MainController 최종 완." />
     <MESSAGE value="findByHospital 미완" />
-    <MESSAGE value="병원 전용 게시판 완료." />
     <MESSAGE value="일단 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="일단 커밋" />
+    <MESSAGE value="병원 전용 게시판 완료." />
+    <option name="LAST_COMMIT_MESSAGE" value="병원 전용 게시판 완료." />
   </component>
 </project>
