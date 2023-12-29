@@ -29,4 +29,13 @@ public class ResvRepository {
         }
         return memberDTOS;
     }
+
+    public boolean resvReception(ResvDTO resvDTO) {
+        resvDTOList.add(resvDTO);
+        return true;
+    }
+
+    public List<ResvDTO> resvHistoryList() {
+        return resvDTOList;
+    }
 }

@@ -2,9 +2,7 @@ package dto;
 
 public class HospitalDTO {
     private String vaccineName;
-    private String vaccineCount;
-
-
+    private int vaccineCount;
 
     public String getVaccineName() {
         return vaccineName;
@@ -14,15 +12,15 @@ public class HospitalDTO {
         this.vaccineName = vaccineName;
     }
 
-    public String getVaccineCount() {
+    public int getVaccineCount() {
         return vaccineCount;
     }
 
-    public void setVaccineCount(String vaccineCount) {
+    public void setVaccineCount(int vaccineCount) {
         this.vaccineCount = vaccineCount;
     }
 
-    public HospitalDTO(String vaccineName, String vaccineCount) {
+    public HospitalDTO(String vaccineName, int vaccineCount) {
         this.vaccineName = vaccineName;
         this.vaccineCount = vaccineCount;
     }
@@ -35,7 +33,7 @@ public class HospitalDTO {
     public String toString() {
         return "HospitalDTO{" +
                 "vaccineName='" + vaccineName + '\'' +
-                ", vaccineCount='" + vaccineCount + '\'' +
+                ", vaccineCount=" + vaccineCount +
                 '}';
     }
 }

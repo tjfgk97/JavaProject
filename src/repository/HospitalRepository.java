@@ -12,7 +12,7 @@ public class HospitalRepository {
         return hospitalDTOList.add(hospitalDTO);
     }
 
-    public boolean updateVaccine(String updateVaccine, String updateVaccineCount) {
+    public boolean updateVaccine(String updateVaccine, int updateVaccineCount) {
         for (int i = 0; i < hospitalDTOList.size(); i++) {
             if(updateVaccine.equals(hospitalDTOList.get(i).getVaccineName())){
                 hospitalDTOList.get(i).setVaccineCount(updateVaccineCount);
@@ -21,5 +21,14 @@ public class HospitalRepository {
         }
         System.out.println("해당 백신이 존재하지 않습니다.");
         return false;
+    }
+
+    public HospitalDTO findByName(String updateVaccine) {
+        for (int i = 0; i < hospitalDTOList.size(); i++) {
+            if(updateVaccine.equals(hospitalDTOList.get(i).getVaccineName())){
+                return hospitalDTOList.get(i);
+            }
+        }
+        return null;
     }
 }

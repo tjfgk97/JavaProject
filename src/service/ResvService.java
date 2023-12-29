@@ -30,6 +30,31 @@ public class ResvService {
     }
 
     public void resvReception() {
-        System.out.println("");
+        System.out.println("예약할 백신 이름을 입력하세요.");
+        String vaccineName = scn.next();
+        System.out.println("예약자명을 입력하세요.");
+        String resvName = scn.next();
+
+        ResvDTO resvDTO = new ResvDTO(vaccineName, resvName, CommonVariables.loginMobile);
+        boolean result = resvRepository.resvReception(resvDTO);
+        if (result) {
+            System.out.println("예약 성공");
+        } else {
+            System.out.println("예약 실패");
+        }
+    }
+
+    public void resvHistoryList() {
+        List<ResvDTO> resvDTOList = resvRepository.resvHistoryList();
+        for (ResvDTO resvDTO : resvDTOList) {
+            System.out.println("resvDTO = " + resvDTO);
+        }
+    }
+
+    public void resvChange() {
+        System.out.println("전화번호를 입력하세요.");
+        String updateMobile = scn.next();
+
+
     }
 }

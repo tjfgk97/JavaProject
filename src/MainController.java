@@ -32,9 +32,9 @@ public class MainController {
                 while (resvBoardRun) {
                     if (CommonVariables.loginedCategory.equals("개인")) {
                         System.out.println("====== 예약 게시판 ======");
-                        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
-                        System.out.println("1.병원별 보유 백신 종류 및 수량 확인 | 2.예약하기 | 3.예약 내역 | 4.예약 상세조회 | 5.예약 변경 | 6.예약 취소 | 0.이전 메뉴");
-                        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------");
+                        System.out.println("----------------------------------------------------------------------------------------------");
+                        System.out.println("1.병원별 보유 백신 종류 및 수량 확인 | 2.예약하기 | 3.예약 내역 | 4.예약 변경 | 5.예약 취소 | 0.이전 메뉴");
+                        System.out.println("----------------------------------------------------------------------------------------------");
                         System.out.print("선택> ");
                         select = scn.nextInt();
 
@@ -44,9 +44,9 @@ public class MainController {
                         } else if (select == 2) {
                             resvService.resvReception();
                         } else if (select == 3) {
-
+                            resvService.resvHistoryList();
                         } else if (select == 4) {
-
+                            resvService.resvChange();
                         } else if (select == 5) {
 
                         } else if (select == 6) {
