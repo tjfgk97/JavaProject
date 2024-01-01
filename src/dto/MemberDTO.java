@@ -69,14 +69,12 @@ public class MemberDTO {
 
     private static Long idValue = 1L;
 
-    public MemberDTO(String memberName, String memberMobile, String memberPassword, String memberCategory, int memberAge, String checkVaccination) {
+    public MemberDTO(String memberName, String memberMobile, String memberPassword, String memberCategory) {
         this.id = idValue++;
         this.memberName = memberName;
         this.memberMobile = memberMobile;
         this.memberPassword = memberPassword;
         this.memberCategory = memberCategory;
-        this.memberAge = memberAge;
-        this.checkVaccination = checkVaccination;
     }
 
     public MemberDTO(String memberMobile, String memberPassword) {
@@ -92,8 +90,6 @@ public class MemberDTO {
                 ", memberMobile='" + memberMobile + '\'' +
                 ", memberPassword='" + memberPassword + '\'' +
                 ", memberCategory='" + memberCategory + '\'' +
-                ", memberAge=" + memberAge +
-                ", checkVaccination='" + checkVaccination + '\'' +
                 '}';
     }
 }

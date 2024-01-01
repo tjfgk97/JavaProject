@@ -67,9 +67,11 @@ public class ResvDTO {
     @Override
     public String toString() {
         return "ResvDTO{" +
-                "resvName='" + resvName + '\'' +
+                "id=" + id +
+                ", resvName='" + resvName + '\'' +
                 ", resvMobile='" + resvMobile + '\'' +
                 ", resvVaccine='" + resvVaccine + '\'' +
+                ", resvDate='" + resvDate + '\'' +
                 '}';
     }
 }

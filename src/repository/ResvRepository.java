@@ -9,26 +9,20 @@ import java.util.List;
 
 public class ResvRepository {
     private static List<ResvDTO> resvDTOList = new ArrayList<>();
-    private static List<HospitalDTO> hospitalDTOList = new ArrayList<>();
-    private static List<MemberDTO> memberDTOList = new ArrayList<>();
 
     public List<MemberDTO> findByHospital(String hospitalName) {
         List<MemberDTO> memberDTOS = new ArrayList<>();
-//        for (int i = 0; i <memberDTOList.size() ; i++) {
-//            if(memberDTOList.get(i).getMemberName().contains(hospitalName)){
-//                MemberDTO memberDTO = memberDTOS.get(i);
-//                memberDTOS.add(memberDTO);
-//            }
-//        }
-        for (MemberDTO memberDTO : memberDTOList) {
-            if (memberDTO.getMemberName().contains(hospitalName)) {
-                if (memberDTO.getMemberCategory().equals("병원")) {
-                    memberDTOS.add(memberDTO);
-                }
+        for (int i = 0; i < memberDTOS.size(); i++) {
+            if(memberDTOS.get(i).getMemberName().contains(hospitalName)){
+                MemberDTO memberDTO = memberDTOS.get(i);
+                memberDTOS.add(memberDTO);
             }
         }
+        System.out.println("memberDTOS = " + memberDTOS);
         return memberDTOS;
     }
+
+
 
     public boolean resvReception(ResvDTO resvDTO) {
         resvDTOList.add(resvDTO);
@@ -36,6 +30,7 @@ public class ResvRepository {
     }
 
     public List<ResvDTO> resvHistoryList() {
+
         return resvDTOList;
     }
 
@@ -56,5 +51,19 @@ public class ResvRepository {
             }
         }
         return false;
+    }
+
+    public boolean resvCancel(Long cancelId) {
+        boolean result = false;
+        for (int i = 0; i < resvDTOList.size(); i++) {
+            if(cancelId.equals(resvDTOList.get(i).getId())){
+                resvDTOList.remove(i);
+                result = true;
+            }else {
+                result = false;
+                System.out.println("존재하지 않는 예약입니다.");
+            }
+        }
+        return result;
     }
 }

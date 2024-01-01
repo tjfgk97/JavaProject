@@ -4,10 +4,13 @@ import common.CommonVariables;
 import dto.HospitalDTO;
 import dto.MemberDTO;
 import dto.ResvDTO;
+import repository.MemberRepository;
 import repository.ResvRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 
 public class ResvService {
     Scanner scn = new Scanner(System.in);
@@ -17,12 +20,10 @@ public class ResvService {
         System.out.println("검색어를 입력하세요.");
         String hospitalName = scn.next();
         List<MemberDTO> memberDTOList = resvRepository.findByHospital(hospitalName);
-
-        if (memberDTOList.size() > 0) {
+        System.out.println("memberDTOList = " + memberDTOList);
+        if (!memberDTOList.isEmpty()) {
             for (MemberDTO memberDTO : memberDTOList) {
-                if (memberDTO.getMemberCategory().equals("병원")) {
-                    System.out.println("memberDTOList = " + memberDTOList);
-                }
+                System.out.println("memberDTO = " + memberDTO);
             }
         } else {
             System.out.println("검색 결과가 없습니다.");
@@ -37,7 +38,7 @@ public class ResvService {
         System.out.println("예약 날짜를 읿력하세요.");
         String resvDate = scn.next();
 
-        ResvDTO resvDTO = new ResvDTO(vaccineName, resvName, resvDate, CommonVariables.loginMobile);
+        ResvDTO resvDTO = new ResvDTO(resvName, CommonVariables.loginMobile, vaccineName, resvDate);
         boolean result = resvRepository.resvReception(resvDTO);
         if (result) {
             System.out.println("예약 성공");
@@ -58,23 +59,31 @@ public class ResvService {
         String updateName = scn.next();
 
         ResvDTO resvDTO = resvRepository.findByName(updateName);
-        if(resvDTO != null){
+        if (resvDTO != null) {
             System.out.println("변경하실 날짜를 입력하세요.");
             String updateDate = scn.next();
             boolean result = resvRepository.resvChange(updateName, updateDate);
-            if(result){
+            if (result) {
                 System.out.println(resvDTO);
                 System.out.println("예약 변경 완료");
-            }else{
+            } else {
                 System.out.println("예약 변경 실패");
             }
-        }else {
+        } else {
             System.out.println("예약 내역이 존재하지 않습니다.");
         }
 
     }
 
     public void resvCancel() {
+        System.out.println("취소할 예약번호를 입력하세요.");
+        Long cancelId = scn.nextLong();
 
+        boolean result = resvRepository.resvCancel(cancelId);
+        if (result) {
+            System.out.println("예약 취소 완료");
+        } else {
+            System.out.println("예약 취소 실패");
+        }
     }
 }

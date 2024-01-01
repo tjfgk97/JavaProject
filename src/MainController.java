@@ -40,7 +40,6 @@ public class MainController {
 
                         if (select == 1) {
                             resvService.findByHospital();
-                            // 미완성
                         } else if (select == 2) {
                             resvService.resvReception();
                         } else if (select == 3) {
@@ -49,10 +48,6 @@ public class MainController {
                             resvService.resvChange();
                         } else if (select == 5) {
                             resvService.resvCancel();
-                        } else if (select == 6) {
-
-                        } else if (select == 7) {
-
                         } else if (select == 0) {
                             System.out.println("이전 메뉴로 돌아갑니다.");
                             resvBoardRun = false;
